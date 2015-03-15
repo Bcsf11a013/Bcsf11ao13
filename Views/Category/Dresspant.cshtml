@@ -14,11 +14,15 @@
                     <div class="col-md-6 col-lg-8 xs-3">@Html.Label("Rating : ",new {@class="control-label"})
                     @x.rating
                 </div>
+                  @{
+                    var s = Session["Id"];
+                    if(s!=null){
                     <form action="/Cart/AddToCart?uid=@Session["Id"]&pid=@x.Id" method="post">
                         <input type="number" value="1" name="quantity" />
                         <input type="submit" value="Add to Cart" class="btn btn-success"/>
                     </form>
+                        } 
+                     }
                   </div>      
              </div>
-                
-            }
+}

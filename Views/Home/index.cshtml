@@ -5,8 +5,6 @@
     <!-- Page Content starts from here -->
 
 
-
-
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
         <ol class="carousel-indicators">
@@ -63,7 +61,7 @@
             <div class="col-lg-3 col-md-4 col-xs-6 thumb" )>
 
                 <p style="text-align:center;color:firebrick;font-size:medium; ">@x.name</p>
-               <a class="thumbnail" href="/Category/Productdescription/@x.Id"><img class="img-responsive" src="@Url.Content(x.path)" alt=""/></a>
+               <a class="thumbnail group" rel="g1" href="@Url.Content(x.path)"><img class="img-responsive" src="@Url.Content(x.path)" alt=""/></a>
                 <div class="row">
                 <div class="col-md-6 col-lg-4 col-xs-2" ><p id="boo">@Html.Label("Price   : ",new {@class="control-label"})
                      @x.price</div>
